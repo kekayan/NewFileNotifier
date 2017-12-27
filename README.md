@@ -1,22 +1,21 @@
-# FilesMonitor
+# NewFileNotifier
 An example for Observer Pattern for My Software Architecture & Desgin Assingmnent.
-The Apllication will monitor a particular Folder and notify the file counts to the subscribers.
 
-Inorder to change the listening directory.Goto Files Monitor class and edit line 45
+"The app should monitor a directory and whenever a new file is available in the directory,
+it should notify the user via SMS, Email or Twitter about the new file. 
+You must follow the observer design pattern.
+Use dummy implementations for Sms, Email and Twitter message sending classes."
+
+Inorder to change the listening directory.Goto Files Monitor class and edit line 43
 ```java
-String folderPath="E:/Test";
+Path path = Paths.get("E:/Test");
 ```
 to
 ```java
-String folderPath="your path";
+Path path = Paths.get("your path");
 ```
 
-Since i used dummy implementations for Sms, Email and Twitter message sending classes.
-Output will be like below .
-When we run our application.It ll send intial files count (Here it's 2 files).
-Thereafter it will only notify for new change in counts .
 
-![alt text](https://lh5.googleusercontent.com/fprMZAoTLiztRwnMM1fflO9adPVlqX6Cz0wJDcvLqeE_Lmezs_OWxjZYGj1eVCyW0Oi3KLmytXxDR44bjqB2=w3840-h1835)
 
 
 
